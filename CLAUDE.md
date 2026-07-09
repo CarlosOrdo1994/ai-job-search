@@ -1,10 +1,10 @@
-# Job Application Assistant for [YOUR_NAME]
+# Job Application Assistant for Carlos Ordóñez García
 
 <!-- SETUP: This file is populated by running /setup -->
 <!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Carlos Ordóñez García, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,68 +13,61 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
-- **Languages:** [YOUR_LANGUAGES]
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Name:** Carlos Ordóñez García
+- **Location:** Madrid, Spain (No commute constraints within Madrid area)
+- **Languages:** Spanish (Native), English (C1 - Professional Proficiency)
+- **Status:** Actively Seeking New Opportunities
+- **LinkedIn headline:** "AI & Business Strategy Lead | Senior Business Strategy & AI Implementation"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **Degree in Business Administration** (2012-2017) - Universidad Complutense de Madrid
+  - Topics: Business Administration, Finance, Management
+- **Erasmus - Int'l Business Consultancy** (2015-2016) - Fontys University (Eindhoven)
+  - Topics: International Consultancy, Global Business Strategy
+- **Primary & Secondary Education** (2000-2012) - Colegio Ntra. Sra. del Recuerdo (Madrid)
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Senior Business Strategy & AI Implementation** (Feb 2022 - Present) - **PMP Partners** (Madrid, Spain)
+  - **BBVA (Digital Banks):** Driving efficiency and profitability AI transformation across Digital Banking units. Led definition of strategic initiatives to improve operational efficiency and identified value levers to enhance profitability through process optimization and cost efficiency. Developed data-driven insights to support strategic decision-making.
+  - **BNP Paribas (Finance Transformation CIB):** Defined and implemented strategy for financial processes (Actuals & Budgeting). Redesigned reporting frameworks (P&L, Balance Sheet) and managed executive client relationships.
+  - **Azora (Hospitality Division):** Led transformation of financial planning and reporting processes. Redesigned budgeting framework, optimized business workflows, and implemented new P&L and Balance Sheet reporting models.
+- **Business Strategy Consultant** (Sep 2019 - Jan 2022) - **Bluetab Solutions** (Madrid, Spain)
+  - **BBVA Global Data Platform Strategy (Datio):** Contributed to the design and rollout of BBVA's global data platform (Datio). Defined functional requirements, supported product development, and collaborated closely with product managers and international teams.
+- **Functional Analyst Consultant** (Jul 2018 - Sep 2019) - **Stratesys Consulting** (Madrid, Spain)
+  - **Telefónica (Data Transformation):** Supported data standardization across Telefónica operators using the SAP ecosystem (BW, HANA, BPC). Gathered requirements and supported UAT processes.
+- **Junior Data Consulting** (Jan 2018 - Jun 2018) - **Accenture** (Kraków, Poland)
+  - **Google Account:** Analyzed and evaluated information of Google websites to redefine client strategy and reach target Google requirements.
+- **Audit Department Intern** (Sep 2017 - Dec 2017) - **Grant Thornton** (Madrid, Spain)
+  - **Spanish Chamber of Commerce:** Audited the financing of ERDF (European Regional Development Fund) of the European Union.
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** AI Strategy Definition, Strategic Planning, Project Management, Operational Efficiency, Corporate Strategy
+- **Secondary:** Finance Transformation, Data Platforms Structure, Stakeholder Management, Requirements Gathering, Process Optimization
+- **Domain:** Banking & Financial Services (CIB, Digital Banking), Telecommunications, Real Estate/Hospitality Data Strategy
+- **Software:** ChatGPT App Development, ElevenLabs, SAP (BW, HANA, BPC), Tagetik, Power BI, Excel, PowerPoint, Word
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
-
-### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
-
-### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- **Agile & Scrum Methodologies Framework** - Completed via Professional Experience / Internal Training
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Strategic & Analytical** - Strong ability to translate complex corporate problems into scalable AI and data platform initiatives.
+- **Stakeholder Management** - Extensive experience managing cross-functional teams and C-suite/executive clients across corporate sectors.
+- **Strengths:** Business transformation, data-driven insight development, C-level communication, bridging the gap between business processes and AI implementations.
+- **Growth areas:** Expanding automated agentic workflows and advanced infrastructure architectures.
+- **Thrives in:** Fast-paced corporate consulting environments, tech-driven transformation units, and high-impact strategy roles.
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Building and designing tailored AI applications that directly optimize enterprise profitability.
+- Leading cross-functional international teams in delivering scalable data platform transformations.
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- **Management & Technology Consulting:** Corporate Strategy, Strategy & AI Lead roles, and AI Consultancy.
+- **Banking, Fintech & Tech Enterprises:** Global Digital Transformation and Corporate AI strategy initiatives.
 
 ### Deal-breakers
-<!-- Hard constraints on job search -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Roles lacking executive backing for AI and technological implementation.
+- Frameworks focused purely on maintenance rather than active digital/operational transformation.
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
@@ -129,7 +122,7 @@ Both documents MUST be compiled and visually inspected via the Read tool on the 
 
 ### ATS & keyword verification (CV)
 ATS parsers read the PDF's embedded text layer, not the rendered page. Extract it with `pdftotext -layout` and verify what a parser sees. `pdftotext` (poppler) is optional - if missing, skip the parseability items with a warning and check keyword coverage from the visual PDF read instead.
-- [ ] CV text layer extracts cleanly - no `(cid:*)` markers, `�` replacement characters, or text visible in the PDF but absent from the extraction
+- [ ] CV text layer extracts cleanly - no `(cid:*)` markers, `` replacement characters, or text visible in the PDF but absent from the extraction
 - [ ] Email and phone appear as **literal text** in the extraction (icon-glyph noise like `MOBILE-ALT`/`Envelope` is harmless, but a contact detail carried only by an icon or hyperlink is invisible to ATS)
 - [ ] Reading order of the extracted text matches the visual order (single-column stock template is safe; multi-column custom templates are where this breaks)
 - [ ] Posting keywords covered or honestly absent - synonym-only matches tightened to the posting's exact term where truthfully applicable, keywords the profile genuinely supports added to experience bullets, genuine gaps left visible and **never stuffed**
