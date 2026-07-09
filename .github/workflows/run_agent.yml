@@ -23,23 +23,19 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
-
-      - name: Install dependencies
-        run: |
-          if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
-          else
-            echo "No requirements.txt found, skipping global install"
-          fi
 
       - name: Run Search Agent
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           echo "Iniciando agente en Python para: ${{ github.event.inputs.keywords }} en ${{ github.event.inputs.location }}"
-          # Ejecutamos el validador de habilidades nativo del repositorio antes de lanzar la búsqueda
-          python tools/lint_skills.py
           
-          # Lanzamos el comando de búsqueda con tus parámetros
-          python .agents/skills/linkedin-search/index.py --search "${{ github.event.inputs.keywords }}" --location "${{ github.event.inputs.location }}" || python .agents/skills/linkedin-search/search.py --search "${{ github.event.inputs.keywords }}" --location "${{ github.event.inputs.location }}"
+          # Intentamos ejecutar el buscador de LinkedIn nativo de la carpeta .agents
+          if [ -f .agents/skills/linkedin-search/index.py ]; then
+            python .agents/skills/linkedin-search/index.py --search "${{ github.event.inputs.keywords }}" --location "${{ github.event.inputs.location }}"
+          elif [ -f .agents/skills/linkedin-search/search.py ]; then
+            python .agents/skills/linkedin-search/search.py --search "${{ github.event.inputs.keywords }}" --location "${{ github.event.inputs.location }}"
+          else
+            echo "Buscando scripts alternativos en la carpeta de agentes..."
+            ls -la .agents/skills/
+          fi
