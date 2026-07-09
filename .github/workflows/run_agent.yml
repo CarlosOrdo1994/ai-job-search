@@ -1,3 +1,6 @@
+YAML
+
+
 name: Run Job Search Agent
 
 on:
@@ -19,18 +22,27 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          node-version: '20'
+          python-version: '3.11'
+          cache: 'pip'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          else
+            echo "No requirements.txt found, skipping global install"
+          fi
 
       - name: Run Search Agent
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          echo "Iniciando agente para: ${{ github.event.inputs.keywords }} en ${{ github.event.inputs.location }}"
-          # Aquí el flujo ejecuta el agente usando tus herramientas nativas de la carpeta .agents
-          npm run agent -- --search "${{ github.event.inputs.keywords }}" --location "${{ github.event.inputs.location }}"
+          echo "Iniciando agente en Python para: ${{ github.event.inputs.keywords }} en ${{ github.event.inputs.location }}"
+          # Ejecutamos el validador de habilidades nativo del repositorio antes de lanzar la búsqueda
+          python tools/lint_skills.py
+          
+          # Lanzamos el comando de búsqueda con tus parámetros
+          python .agents/skills/linkedin-search/index.py --search "${{ github.event.inputs.key
