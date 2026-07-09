@@ -1,0 +1,36 @@
+name: Run Job Search Agent
+
+on:
+  workflow_dispatch:
+    inputs:
+      keywords:
+        description: 'Palabras clave de búsqueda (ej. Strategy AI Lead)'
+        required: true
+        default: 'Strategy AI Lead'
+      location:
+        description: 'Ubicación (ej. Madrid)'
+        required: true
+        default: 'Madrid'
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Search Agent
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          echo "Iniciando agente para: ${{ github.event.inputs.keywords }} en ${{ github.event.inputs.location }}"
+          # Aquí el flujo ejecuta el agente usando tus herramientas nativas de la carpeta .agents
+          npm run agent -- --search "${{ github.event.inputs.keywords }}" --location "${{ github.event.inputs.location }}"
