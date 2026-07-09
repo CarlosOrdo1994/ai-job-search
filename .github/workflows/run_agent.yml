@@ -1,6 +1,3 @@
-YAML
-
-
 name: Run Job Search Agent
 
 on:
@@ -45,4 +42,4 @@ jobs:
           python tools/lint_skills.py
           
           # Lanzamos el comando de búsqueda con tus parámetros
-          python .agents/skills/linkedin-search/index.py --search "${{ github.event.inputs.key
+          python .agents/skills/linkedin-search/index.py --search "${{ github.event.inputs.keywords }}" --location "${{ github.event.inputs.location }}" || python .agents/skills/linkedin-search/search.py --search "${{ github.event.inputs.keywords }}" --location "${{ github.event.inputs.location }}"
